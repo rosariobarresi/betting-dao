@@ -1,6 +1,6 @@
 package com.betting.dao.entity;
 
-public class MatchEntity {
+public class EurobetMatchEntity {
 
 	private int idMatch;
 	private Long time;
@@ -10,8 +10,6 @@ public class MatchEntity {
 	private double awayWins;
 	private double under25;
 	private double over25;
-	private double under35;
-	private double over35;
 	private double goal;
 	private double noGoal;
 
@@ -79,22 +77,6 @@ public class MatchEntity {
 		this.over25 = over25;
 	}
 
-	public double getUnder35() {
-		return under35;
-	}
-
-	public void setUnder35(double under35) {
-		this.under35 = under35;
-	}
-
-	public double getOver35() {
-		return over35;
-	}
-
-	public void setOver35(double over35) {
-		this.over35 = over35;
-	}
-
 	public double getGoal() {
 		return goal;
 	}
@@ -131,10 +113,6 @@ public class MatchEntity {
 		builder.append(", over25=");
 		builder.append(over25);
 		builder.append(", under35=");
-		builder.append(under35);
-		builder.append(", over35=");
-		builder.append(over35);
-		builder.append(", goal=");
 		builder.append(goal);
 		builder.append(", noGoal=");
 		builder.append(noGoal);
